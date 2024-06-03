@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Recipes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Healthy Recipes</h1>
+    </header>
+    <main>
+        <div class="recipe-form">
+            <h2>Add New Recipe</h2>
+            <form id="recipeForm">
+                <input type="text" id="recipeName" placeholder="Recipe Name" required>
+                <textarea id="recipeIngredients" placeholder="Ingredients" required></textarea>
+                <textarea id="recipeInstructions" placeholder="Instructions" required></textarea>
+                <input type="file" id="recipePhoto" accept="image/*">
+                <button type="submit">Add Recipe</button>
+            </form>
+        </div>
+        <div id="recipesContainer" class="recipes-container">
+            <!-- Recipes will be dynamically added here -->
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

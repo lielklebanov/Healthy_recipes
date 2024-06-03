@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Healthy Recipes Splash Screen</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FFC0CB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #333;
+  }
+  .splash-screen {
+    max-width: 80%;
+  }
+  .splash-screen h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+  }
+  .splash-screen p {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }
+  .logo {
+    width: 150px;
+    margin-bottom: 1em;
+  }
+  .loading {
+    font-size: 1em;
+    color: #555;
+    animation: blink 1s infinite;
+  }
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+  }
+  .enter-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #ffa098;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .enter-button:hover {
+    background-color: #f7a8a2;
+  }
+</style>
+</head>
+<body>
+  <div class="splash-screen">
+    <img src="https://i.pinimg.com/564x/03/ea/60/03ea60ffcc8bfd3334ad86af59d3b590.jpg" alt="Healthy Recipes Logo" class="logo">
+    <h1>Welcome to Healthy Recipes!</h1>
+    <p>Discover delicious and nutritious meals.</p>
+    <div class="loading">Loading...</div>
+    <button class="enter-button" onclick="location.href='index.html'">Enter</button>
+  </div>
+</body>
+</html>

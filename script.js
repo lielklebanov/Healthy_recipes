@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const recipePhoto = document.getElementById('recipePhoto').files[0];
 
         addRecipe(recipeName, recipeIngredients, recipeInstructions, recipePhoto);
+        
 
         // Reset form
         recipeForm.reset();
